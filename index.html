@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Instagram Clone Coding</title>
+    <style>
+        @import url(css/default.css);
+        @import url(css/wrapper.css);
+        @import url(css/sidebar.css);
+        @import url(css/account.css);
+        @import url(css/feed.css);
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <li>
+                <img width="102" src="image/logo_instagram.png" alt="">
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/1.png" alt="">
+                <p class="bold"><b>Home</b></p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/2.png" alt="">
+                <p class="bold">Search</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/3.png" alt="">
+                <p class="bold">Explore</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/4.png" alt="">
+                <p class="bold">Reels</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/5.png" alt="">
+                <p class="bold">Messages</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/6.png" alt="">
+                <p class="bold">Notifications</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img src="image/icons/7.png" alt="">
+                <p class="bold">Creates</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img width="24" class="sidebar-profile" src="image/profile/profile.jpeg" alt="">
+                <p class="bold">Profile</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img width="24px" src="image/icons/19.jpeg" alt="">
+                <p class="bold">Threads</p>
+            </li>
+            <li class="sidebar-content flex-row">
+                <img width="24px" src="image/icons/9.png" alt="">
+                <p class="bold">More</p>
+            </li>
+        </div>
+        <div class="wrapper">
+            <div class="center flex-col">
+                <div class="status-wrapper flex-row">
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/1.png" alt="">
+                        </div>
+                        <p class="username"> Windows </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/2.png" alt="">
+                        </div>
+                        <p class="username"> Mr. William </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/3.png" alt="">
+                        </div>
+                        <p class="username"> Taylor </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/4.png" alt="">
+                        </div>
+                        <p class="username"> GD </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/5.png" alt="">
+                        </div>
+                        <p class="username"> Cmiww </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/6.png" alt="">
+                        </div>
+                        <p class="username"> Putt </p>
+                    </div>
+
+                    <div class="status-card flex-col">
+                        <div class="profile-pic">
+                            <img width="32" src="image/follower/7.png" alt="">
+                        </div>
+                        <p class="username"> Bro </p>
+                    </div>
+                </div>
+                <div class="feed flex-col">
+                    <div class="profile flex-row">
+                        <div class="img-wrap">
+                            <img class="feed-profile" src="image/profile/profile.jpeg" alt="">
+                        </div>
+                        <p class="flex-col">
+                            <span>zkanr_</span>
+                            <span>YG Entertainment, Korea</span>
+                        </p>
+                        <img width="20" src="image/icons/10.png" alt="">
+                    </div>
+                    <div class="imgs swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="image/post/4.jpeg" alt=""></div>
+                              <div class="swiper-slide"><img src="image/post/5.jpeg" alt=""></div>
+                              <div class="swiper-slide"><img src="image/post/6.jpeg" alt=""></div>
+                              <div class="swiper-slide"><img src="image/post/7.jpeg" alt=""></div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="feed-icons flex-row">
+                        <img id="heart" onclick="like()" src="image/icons/11.png">
+                        <img src="image/icons/12.png" alt=""/>
+                        <img src="image/icons/13.png" alt=""/>
+                        <img src="image/icons/14.png" alt=""/>
+                    </div>
+                    <div class="likes">
+                        578,766 likes
+                    </div>
+                    <div class="captions">
+                        <span class="title">zkanr_</span>
+                        My girl
+                        <span class="hashtag"> #SpartaCodingClub #CloneCoding #Instagram #LearningX </span>
+                    </div>
+                    <div class="count">
+                        View all 1000 comments
+                    </div>
+                    <div class="comment flex-row">
+                        <div class="comment-box">
+                            <input type="text" placeholder="Add a comment...">
+                        </div>
+                        <div class="imgs emoji-icons">
+                            <img src="image/icons/17.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="account">
+                <div class="account-content">
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/profile/profile.jpeg" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>zkanr_</span>
+                        <span>Rizka</span>
+                    </p>
+                    <a href="#">Switch</a>
+                   </li> 
+
+                   <li class="flex-row suggested">
+                    <span>Suggested for you</span>
+                    <span>See All</span>
+                   </li>
+
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/follower/13.jpeg" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>fluffyberrys</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                   </li>
+                   
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/follower/10.jpg" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>vittyy__</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                   </li>
+
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/follower/11.jpg" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>nasha_vasha</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                   </li>
+
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/follower/12.jpg" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>.badgirll</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                   </li>
+
+                   <li class="friends flex-row">
+                    <div class="img-wrap">
+                        <img class="suggest-profile" src="image/follower/9.png" alt="">
+                    </div>
+                    <p class="flex-col">
+                        <span>seccns._</span>
+                        <span>Suggested for you</span>
+                    </p>
+                    <a href="#">Follow</a>
+                   </li>
+                </div>
+                <div class="about">
+                    <a href="#">About</a>
+                    <a href="#">Help</a>
+                    <a href="#">Press</a>
+                    <a href="#">API</a>
+                    <a href="#">Job</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Language</a>
+                    <a href="#">Meta Verified</a>
+                </div>
+                <div class="name">
+                    @ 2024 INSTAGRAM FROM META
+                </div>
+            </div>
+        <script>
+        let is_liked = true;
+
+            function like() {
+                if (is_liked == true) {
+                    $("#heart").attr("src", "image/icons/15.png");
+                    is_liked = false;
+                } else {
+                    $("#heart").attr("src", "image/icons/11.png");
+                    is_liked = true;
+                }
+            }
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+</body>
+</html>
